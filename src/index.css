@@ -1,4 +1,13 @@
+
+
 :root {
+  --color: white;
+  --background-color-body: rgb(33, 47, 60);
+  --background-color-board: black;
+  --alive-color: white;
+  --alive-hover-color: red;
+  --border-color: rgb(0, 0, 0);
+  --cell-size: 10px;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -28,6 +37,10 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  color: var(--color);
+  background-color: var(--background-color-body);
+  text-align: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h1 {
@@ -52,6 +65,51 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+table {
+  margin: 0 auto 20px auto;
+  border-collapse: collapse;
+  background-color: var(--background-color-board)
+}
+
+td {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  border: 1px solid var(--border-color);
+}
+
+.alive {
+  background-color: var(--alive-color);
+
+  &:hover {
+    background-color: var(--alive-hover-color);
+  }
+}
+
+.dead {
+  &:hover {
+    background-color: var(--border-color);
+  }
+}
+
+.flexRow {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: auto;
+  align-items: flex-start;
+}
+
+.upperControls {
+  width:350px;
+}
+.middleControls {
+  width:350px;
+}
+.lowerControls {
+  width:350px;
 }
 
 @media (prefers-color-scheme: light) {
