@@ -7,7 +7,7 @@
   --alive-color: white;
   --alive-hover-color: red;
   --border-color: rgb(0, 0, 0);
-  --cell-size: 10px;
+  --cell-size: 4px;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
