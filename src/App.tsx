@@ -205,7 +205,7 @@ class App extends Component {
           <button type='button' onClick={this.handleNewBoard}>Re-Generate Board</button>
           <button type='button' onClick={this.handleClearBoard}>Reset & Clear Board</button>
         </div>
-        <h1>Created by <a href="https://brunokoppel.dev" style={{ color: "#0cffab" }}>The Engine Engineer</a></h1>
+        <h1>Created by <a href="https://brko.netlify.app" style={{ color: "#0cffab" }}>Bruno Koppel</a></h1>
       </div>
     );
   }
