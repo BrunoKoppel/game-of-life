@@ -1,8 +1,8 @@
 import { Component, ReactNode } from 'react'
 import './App.css'
 
-const totalBoardRows = 160;
-const totalBoardColumns = 90;
+const totalBoardRows = 50;
+const totalBoardColumns = 50;
 
 const cellStatus = () => Math.random() < 0.3;
 
