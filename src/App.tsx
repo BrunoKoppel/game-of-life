@@ -163,7 +163,7 @@ class App extends Component {
     this.setState({ isGameRunning: false });
   }
 
-  componentDidUpdate(prevProps: AppState, prevState: AppState): void {
+  componentDidUpdate(_prevProps: AppState, prevState: AppState): void {
     const { isGameRunning, speed } = this.state;
     const speedChanged = prevState.speed !== speed;
     const gameStarted = !prevState.isGameRunning && isGameRunning;
